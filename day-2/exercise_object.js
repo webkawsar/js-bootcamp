@@ -63,3 +63,5 @@ const movies = [
 
 const movieIndex = movies[1];
 // console.log(movieIndex.id + movieIndex.movieName + movieIndex.rating + movieIndex.category);
+
+
