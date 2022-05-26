@@ -21,7 +21,7 @@
 
 
 // If Condition
-const age = 8;
+const age = 12;
 if(age < 10) {
     console.log('stay home under your mom supervision and feed khaw');
 
@@ -40,7 +40,7 @@ if(age < 10) {
 
 
 // Switch Statement
-switch (age) {
+switch (true) {
     case age < 10:
         console.log('stay home under your mom supervision and feed khaw');
         break;
