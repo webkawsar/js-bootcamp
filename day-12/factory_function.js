@@ -20,7 +20,7 @@ function product(name, price, isAvailable) {
 
 
 // console.log(product('Printed T-shirt', 100, 'available'));
-console.log(product('Printed Shirt', 250, 'available').productDetails());
+console.log(product('Printed Shirt', 250, 'available'));
 
 
 
