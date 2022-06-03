@@ -9,6 +9,13 @@
 //    4.1 freecodecamp prepared record live class
 // 5. Looping record live class
 // 6. Live class (Nested data access, function evolution)       //4
+// 7. Live class (this) but provide record live class           //5
+
+
+
+
+
+
 
 
 
