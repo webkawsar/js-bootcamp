@@ -12,7 +12,7 @@
 // Boolean
 // null or undefined
 // Symbol
-
+// BigInt
 
 
 

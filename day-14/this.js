@@ -1,4 +1,6 @@
 
+// global execution context
+// functional execution context
 
 
 // ১। গ্লোবাল রুলস
@@ -48,9 +50,11 @@ const object = {
 }
 object.sayHi()();
 
+// const test = object.sayHi;
+// test()
 
 
-// solve top problem by using arrow function
+// solve top problem by using arrow function lexical this keyword
 const object1 = {
     name: 'Kawsar Ahmed',
     age: 25,
@@ -115,7 +119,7 @@ const myCustomObj = {
 
 
 
- const myCustomObj2 = {
+const myCustomObj2 = {
     name: 'Zonayed Ahmed',
     age: 21,
     job: 'Student',
@@ -124,16 +128,16 @@ const myCustomObj = {
 
        msg: function() {
 
-           console.log(this);
-          console.log('My name is: ' + this.name);
+            console.log(this);
+            console.log('My name is: ' + this.name);
        }
     }
- }
+}
 
 //  myCustomObj2.anotherObj.msg() // this refers here anotherObj
 
 // bind / call / apply rules
- myCustomObj2.anotherObj.msg.call(myCustomObj2); // this refers here myCustomObj2
+myCustomObj2.anotherObj.msg.call(myCustomObj2); // this refers here myCustomObj2
 
 
 
@@ -143,12 +147,48 @@ function Person(name, age, job) {
     this.age = age;
     this.job = job;
 }
+ 
+
+const obj = {sex: 'male'}
+// console.log(Person.call(obj, 'Imran Ahmed', 25, 'Bekar'));
+
 
 const kawsar = new Person('Kawsar Ahmed', 25, 'Developer');
 const shamim = new Person('Shamim Mohammad', 25, 'Pilot');
 
 console.log(kawsar);
 console.log(shamim);
+
+
+
+const Teacher = function(name, age, job, subject) {
+    //eta buji nai
+    Person.call(this, name, age, job);
+    this.subject = subject;
+}
+
+const kamaljeet = new Teacher('Kamaljeet Saini', 53, 'Teacher', 'CSE');
+console.log(kamaljeet);
+
+
+
+
+const GeneralPeople = function(name, age, job) { 
+    this.name = name;
+    this.age = age;
+    this.job = job;
+}
+
+const Athlete = function(name, age, job, prize) {
+    GeneralPeople.call(this);
+    this.prize = 100;
+}
+
+const pAthlete = new Athlete('Sahjahan', 25, 'probashi', 10)
+console.log(pAthlete);
+
+
+
 
 
 
