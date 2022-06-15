@@ -11,8 +11,8 @@
 // 6. Live class (Nested data access, function evolution)       //4
 // 7. Live class (this) but provide record live class           //5
 
-
-
+// 9 June 2022 class off silo
+// 13 June 2022
 
 
 
