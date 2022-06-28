@@ -17,7 +17,8 @@ const testFunc = () => {
     console.log('Test func');
 }
 
-
+console.log(a);
+const a = 'Hi';
 
 
 
