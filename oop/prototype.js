@@ -75,7 +75,7 @@ function PersonF(firstName, lastName, age, profession) {
 // PersonF.prototype = Person.prototype;
 PersonF.prototype = Object.create(Person.prototype)
 
-// it can add constructor name in prototype
+// it can add constructor name in prototype but can't change prototype name
 PersonF.prototype.constructor = PersonF;
 
 PersonF.prototype.professionalInfo = function() {
