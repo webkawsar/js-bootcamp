@@ -39,8 +39,8 @@ console.log(str1.includes(str2));
 
 
 // Problem 3
-const dashesStr = 'Hi i am Kawsar'.replace(/([a-z])([A-Z])/g, "$1 $2");
-
+const dashesStr = 'Hi i am Kawsar'.replace(/[^a-zA-Z0-9]/g, "$1 $2")
+console.log(dashesStr);
 
 
 
