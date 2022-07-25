@@ -3,7 +3,6 @@
 
 
 // Object Oriented JavaScript
-// Prototype Chain part abar dekte hobe
 // bind, call, apply abar dekte hobe
 
 
@@ -84,6 +83,26 @@ PersonF.prototype.professionalInfo = function() {
 
 const personF = new PersonF('Kawsar', 'Ahmed', 26, 'Web Developer');
 console.log(personF);
+
+
+
+
+
+
+
+// object oriented javascript principles
+// inheritance
+// encapsulation
+// abstraction
+// polymorphism
+
+
+
+
+
+
+
+
 
 
 
