@@ -6,34 +6,56 @@
 class Profile {
 
     // filled/property
+    profession = 'JS Developer';
     // private filled/property
     #id = 101;
+    #age = 26;
 
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
+    constructor(fName, lName) {
+        this.fName = fName;
+        this.lName = lName;
     }
 
-    showInfo() {
-        return this.name + '-' + this.age;
+    fullName() {
+        return this.name + '-' + this.lName;
     }
+
+    static construct() {
+        return new Profile('Shamim', 'Mohammad')
+    }
+
+    get age() {
+        return this.#age;
+    }
+
+    set age(num) {
+        if(num < 18) {
+            throw new Error('You are not young developer')
+        } else {
+            this.#age = num;
+        }
+    }
+
+
 }
 
-const kawsar = new Profile('Kawsar', 26);
-// console.log(kawsar);
-
+const kawsar = new Profile('Kawsar', 'Ahmed');
+console.log(kawsar);
+// kawsar.age = 30;
+// console.log(kawsar.age);
+console.log(Profile.construct());
 
 
 
 
 class Profession extends Profile {
-    constructor(name, age, profession) {
-        super(name, age)
+    constructor(fName, lName, profession) {
+        super(fName, lName)
         this.profession = profession;
     }
 
-    showInfo() {
-        return super.showInfo() + '-' + this.profession;
+    fullName() {
+        return super.fullName() + '-' + this.profession;
     }
 
     #showProfession() {
@@ -41,7 +63,7 @@ class Profession extends Profile {
     }
 }
 
-const kawsarP = new Profession('Kawsar', 26, 'Web Developer');
+const kawsarP = new Profession('Kawsar', 'Ahmed', 'Web Developer');
 console.log(kawsarP);
 
 
