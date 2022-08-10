@@ -49,9 +49,12 @@ console.log(Profile.construct());
 
 
 class Profession extends Profile {
+    // height = '5.8'
     constructor(fName, lName, profession) {
         super(fName, lName)
         this.profession = profession;
+
+        this.height = this.height.bind({});
     }
 
     fullName() {
@@ -61,11 +64,17 @@ class Profession extends Profile {
     #showProfession() {
         return this.profession;
     }
+
+    height() {
+        console.log(this);
+        return 'My Height is 5.8"'
+    }
 }
 
 const kawsarP = new Profession('Kawsar', 'Ahmed', 'Web Developer');
 console.log(kawsarP);
-
+console.log(kawsarP.height);
+console.log(kawsarP.height());
 
 
 

@@ -19,14 +19,23 @@ for (let i = 0; i < 3; i++) {
 
 
 
+// class no. 6 video => complete 38.00 minute
+
+// accessing data from nested array and object
+// constructor function vs factory function
+// copy by value
+// copy by reference
+// pass by value 
+// pass by reference
+// nested loop
 
 
 
 
-
-
-
-
+// nested data access from array
+// array vs object
+// accessing data from nested oject
+// 
 
 
 
