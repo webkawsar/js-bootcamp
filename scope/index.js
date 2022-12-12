@@ -2,8 +2,8 @@
 
 
 // Scope
-// Global Scope
-// Functional Scope / Local Scope
+// Global Scope (outside of function)
+// Functional Scope / Local Scope (inside function)
 // Block Scope
 
 
