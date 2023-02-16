@@ -188,7 +188,26 @@ function greeting() {
 // variable er value assign kore
 // joto calling ase sob call kore
 
+
+
 // const, let er somoy temporal dead zone e rakhe
+// Temporal Dead Zone is the period of time during which the let and const declarations cannot be accessed.
+
+if(true) {
+    // console.log(bestFood); //  ReferenceError: bestFood is not defined
+    let bestFood = "Vegetable Fried Rice";
+}
 
 
 
+let bestFood; 
+console.log(bestFood);
+
+bestFood = "Vegetable Fried Rice";
+console.log(bestFood);
+
+
+
+
+
+// https://www.freecodecamp.org/news/javascript-temporal-dead-zone-and-hoisting-explained/#:~:text=A%20temporal%20dead%20zone%20(TDZ,initial%20value%20to%20a%20variable.
