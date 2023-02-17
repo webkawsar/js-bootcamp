@@ -157,8 +157,8 @@ console.log(bundFunc())
 
 
 // first class function
-// complete 58 minute porjonto
-
+// higher order function
+// callback function
 
 
 
