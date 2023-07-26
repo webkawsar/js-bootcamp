@@ -1,7 +1,5 @@
 
 
-
-
 // pass by value
 
 let a = 10;
@@ -15,20 +13,5 @@ function passedByValue(num) {
 
 passedByValue(a)
 console.log(a);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

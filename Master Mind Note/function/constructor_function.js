@@ -21,22 +21,3 @@ const product2 = new Product('School Shoes', 120);
 // console.log(product2, 'product2');
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,6 @@
 
 
 
-
 // Pass by reference
 let obj1 = { value: 1 };
 function passedByReference(obj) {
@@ -14,14 +13,6 @@ function passedByReference(obj) {
 
 passedByReference(obj1);
 console.log(obj1);
-
-
-
-
-
-
-
-
 
 
 
